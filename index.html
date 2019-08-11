@@ -1,269 +1,271 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link rel="stylesheet" href="css/styles.css?v=1.0" />
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
-
-<body>
-    <div class="wrapper">
-        <div class="container">
-            <div class="left">
-                <div class="top">
-                    <div class="status">
-                        <div class="indicator"></div>
-                        <div class="status-text">connecting...</div>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <div class="left">
+                    <div class="top">
+                        <div class="status">
+                            <div class="indicator"></div>
+                            <div class="status-text">connecting...</div>
+                        </div>
+                        <input id="filter-input" type="text" />
+                        <img class="search-icon" src="images/active-search.png" />
+                        <div class="compose"></div>
                     </div>
-                    <input id="filter-input" type="text" />
-                    <img class="search-icon" src="images/active-search.png">
-                    <div class="compose"></div>
-                </div>
-                <ul class="people">
-                    <li class="person active" data-chat="person1">
-                        <img src="images/heroes/batman.png" alt="" />
-                        <span class="name">Batman</span>
-                        <span class="time">2:09 PM</span>
-                        <span class="preview">I was wondering...</span>
-                    </li>
-                    <li class="person" data-chat="person2">
-                        <img src="images/heroes/hulk.png" alt="" />
-                        <span class="name">Hulk</span>
-                        <span class="time">1:44 PM</span>
-                        <span class="preview">I've forgotten how it felt before</span>
-                    </li>
-                    <li class="person" data-chat="person3">
-                        <img src="images/heroes/captain-america.png" alt="" />
-                        <span class="name">Captain America</span>
-                        <span class="time">2:09 PM</span>
-                        <span class="preview">But we’re probably gonna need a new carpet.</span>
-                    </li>
-                    <li class="person" data-chat="person4">
-                        <img src="images/heroes/deadpool.png" alt="" />
-                        <span class="name">Deadpool</span>
-                        <span class="time">2:09 PM</span>
-                        <span class="preview">It’s not that bad...</span>
-                    </li>
-                    <li class="person" data-chat="person5">
-                        <img src="images/heroes/ironman.png" alt="" />
-                        <span class="name">Iron Man</span>
-                        <span class="time">2:09 PM</span>
-                        <span class="preview">Wasup for the third time like is you bling bitch</span>
-                    </li>
-                    <li class="person" data-chat="person6">
-                        <img src="images/heroes/spiderman-black.png" alt="" />
-                        <span class="name">Spiderman</span>
-                        <span class="time">2:09 PM</span>
-                        <span class="preview">howdoyoudoaspace</span>
-                    </li>
-                    <li class="person" data-chat="person7">
-                        <img src="images/heroes/wolverine.png" alt="" />
-                        <span class="name">Wolverine</span>
-                        <span class="time">2:09 PM</span>
-                        <span class="preview">howdoyoudoaspace</span>
-                    </li>
-                    <li class="person" data-chat="person8">
-                        <img src="images/heroes/superman.png" alt="" />
-                        <span class="name">Superman</span>
-                        <span class="time">2:09 PM</span>
-                        <span class="preview">howdoyoudoaspace</span>
-                    </li>
-                </ul>
-                <div class="bottom">
-                    <div class="indicator-bottom offline"></div>
-                    <div class="go-status">Go Offline</div>
-                </div>
-            </div>
-            <div class="right">
-                <div class="top"><span>To: <span class="name">Dog Woofson</span></span>
-                </div>
-                <div class="chat active-chat" data-chat="person1">
-                    <div class="conversation-start">
-                        <span>Today, 6:48 AM</span>
-                    </div>
-                    <div class="bubble me">
-                        What's this cave expense I'm seeing for $500?
-                    </div>
-                    <div class="bubble you">
-                        It's for a gadget Master Bruce.
-                    </div>
-                    <div class="bubble me">
-                        I love gadgets! What kind of gadget?
-                    </div>
-                    <div class="bubble you">
-                        A Roomba, to vacuum the cave.
-                    </div>
-                    <div class="bubble me">
-                        I'm not reimbursing you for that. That's a silly gadget and a waste of money.
-                    </div>
-                    <div class="bubble you">
-                        You spent 92 million in R&D on a boot with ice skates in it.
-                    </div>
-                    <div class="bubble me">
-                        It has two boots. Only 46 mill per boot. That's a steal.
-                    </div>
-                    <div class="bubble you">
-                        Maybe you should just clean up after yourself then.
-                    </div>
-                    <div class="bubble me">
-                        You'll get your Roomba.
+                    <ul class="people">
+                        <li class="person active" data-chat="person1">
+                            <img src="images/heroes/batman.png" alt="" />
+                            <span class="name">Batman</span>
+                            <span class="time">2:09 PM</span>
+                            <span class="preview">I was wondering...</span>
+                        </li>
+                        <li class="person" data-chat="person2">
+                            <img src="images/heroes/hulk.png" alt="" />
+                            <span class="name">Hulk</span>
+                            <span class="time">1:44 PM</span>
+                            <span class="preview">I've forgotten how it felt before</span>
+                        </li>
+                        <li class="person" data-chat="person3">
+                            <img src="images/heroes/captain-america.png" alt="" />
+                            <span class="name">Captain America</span>
+                            <span class="time">2:09 PM</span>
+                            <span class="preview">But we’re probably gonna need a new carpet.</span>
+                        </li>
+                        <li class="person" data-chat="person4">
+                            <img src="images/heroes/deadpool.png" alt="" />
+                            <span class="name">Deadpool</span>
+                            <span class="time">2:09 PM</span>
+                            <span class="preview">It’s not that bad...</span>
+                        </li>
+                        <li class="person" data-chat="person5">
+                            <img src="images/heroes/ironman.png" alt="" />
+                            <span class="name">Iron Man</span>
+                            <span class="time">2:09 PM</span>
+                            <span class="preview">Wasup for the third time like is you bling bitch</span>
+                        </li>
+                        <li class="person" data-chat="person6">
+                            <img src="images/heroes/spiderman-black.png" alt="" />
+                            <span class="name">Spiderman</span>
+                            <span class="time">2:09 PM</span>
+                            <span class="preview">howdoyoudoaspace</span>
+                        </li>
+                        <li class="person" data-chat="person7">
+                            <img src="images/heroes/wolverine.png" alt="" />
+                            <span class="name">Wolverine</span>
+                            <span class="time">2:09 PM</span>
+                            <span class="preview">howdoyoudoaspace</span>
+                        </li>
+                        <li class="person" data-chat="person8">
+                            <img src="images/heroes/superman.png" alt="" />
+                            <span class="name">Superman</span>
+                            <span class="time">2:09 PM</span>
+                            <span class="preview">howdoyoudoaspace</span>
+                        </li>
+                    </ul>
+                    <div class="bottom">
+                        <div class="indicator-bottom offline"></div>
+                        <div class="go-status">Go Offline</div>
                     </div>
                 </div>
-                <div class="chat" data-chat="person2">
-                    <div class="conversation-start">
-                        <span>Today, 5:38 PM</span>
+                <div class="right">
+                    <div class="top">
+                        <span>To: <span class="name">Batman</span></span>
                     </div>
-                    <div class="bubble you">
-                        Leave me alone.
+                    <div class="chat active-chat" data-chat="person1">
+                        <div class="conversation-start">
+                            <span>Today, 6:48 AM</span>
+                        </div>
+                        <div class="bubble me">
+                            What's this cave expense I'm seeing for $500?
+                        </div>
+                        <div class="bubble you">
+                            It's for a gadget Master Bruce.
+                        </div>
+                        <div class="bubble me">
+                            I love gadgets! What kind of gadget?
+                        </div>
+                        <div class="bubble you">
+                            A Roomba, to vacuum the cave.
+                        </div>
+                        <div class="bubble me">
+                            I'm not reimbursing you for that. That's a silly gadget and a waste of money.
+                        </div>
+                        <div class="bubble you">
+                            You spent 92 million in R&D on a boot with ice skates in it.
+                        </div>
+                        <div class="bubble me">
+                            It has two boots. Only 46 mill per boot. That's a steal.
+                        </div>
+                        <div class="bubble you">
+                            Maybe you should just clean up after yourself then.
+                        </div>
+                        <div class="bubble me">
+                            You'll get your Roomba.
+                        </div>
                     </div>
-                    <div class="bubble me">
-                        Any last words?
+                    <div class="chat" data-chat="person2">
+                        <div class="conversation-start">
+                            <span>Today, 5:38 PM</span>
+                        </div>
+                        <div class="bubble you">
+                            Leave me alone.
+                        </div>
+                        <div class="bubble me">
+                            Any last words?
+                        </div>
+                        <div class="bubble you">
+                            Hulk... SMASH!
+                        </div>
                     </div>
-                    <div class="bubble you">
-                        Hulk... SMASH!
+                    <div class="chat" data-chat="person3">
+                        <div class="conversation-start">
+                            <span>Today, 3:38 AM</span>
+                        </div>
+                        <div class="bubble you">
+                            The star quartz affects all metals, Doom. Give it here, or the world will know what kind of
+                            underpants a despot wears.
+                        </div>
+                        <div class="bubble me">
+                            Hah! I am wearing a metal thong.
+                        </div>
+                        <div class="bubble you">
+                            Fall back, and let this shield blow freedom o'er the land. Like the gusty wind that follows
+                            a Fourth of July weenie with extra onion.
+                        </div>
+                        <div class="bubble you">
+                            Yankee doodle dandy!
+                        </div>
+                        <div class="bubble you">
+                            Let's yankee our doodles outta here!
+                        </div>
                     </div>
-                </div>
-                <div class="chat" data-chat="person3">
-                    <div class="conversation-start">
-                        <span>Today, 3:38 AM</span>
+                    <div class="chat" data-chat="person4">
+                        <div class="conversation-start">
+                            <span>Yesterday, 4:20 PM</span>
+                        </div>
+                        <div class="bubble you">
+                            I had another Liam Neeson nightmare. I kidnapped his daughter and he just wasn't having it.
+                        </div>
+                        <div class="bubble you">
+                            They made three of those movies. At some point you have to wonder if he's just a bad parent.
+                        </div>
+                        <div class="bubble me">
+                            Hmmm.
+                        </div>
                     </div>
-                    <div class="bubble you">
-                        The star quartz affects all metals, Doom. Give it here, or the world will know what kind of underpants a despot wears.
+                    <div class="chat" data-chat="person5">
+                        <div class="conversation-start">
+                            <span>Today, 6:28 AM</span>
+                        </div>
+                        <div class="bubble you">
+                            Hey. Ow,Ah Ah Ah Ah Ah Ah Ah Ah Ah Ah.
+                        </div>
+                        <div class="bubble me">
+                            It is a tight fit sir.
+                        </div>
+                        <div class="bubble you">
+                            Hey, Ah.
+                        </div>
+                        <div class="bubble me">
+                            Sir the more you struggle the more this is going to hurt
+                        </div>
+                        <div class="bubble you">
+                            Be gentle. This is my first time.
+                        </div>
+                        <div class="bubble you">
+                            I designed this to come off, so... hey. I really should be able to...
+                        </div>
+                        <div class="bubble me">
+                            Please, try not to move sir.
+                        </div>
                     </div>
-                    <div class="bubble me">
-                        Hah! I am wearing a metal thong.
+                    <div class="chat" data-chat="person6">
+                        <div class="conversation-start">
+                            <span>Monday, 1:27 PM</span>
+                        </div>
+                        <div class="bubble me">
+                            You're disgusting!
+                        </div>
+                        <div class="bubble you">
+                            What did I do?
+                        </div>
+                        <div class="bubble me">
+                            Reed just told me your webbing is organic!
+                        </div>
+                        <div class="bubble you">
+                            Yeah so?
+                        </div>
+                        <div class="bubble me">
+                            You've made me hammocks out of that stuff!
+                        </div>
+                        <div class="bubble you">
+                            I still don't see the problem.
+                        </div>
+                        <div class="bubble me">
+                            I slept in hardened white fluid that came out of your body.
+                        </div>
+                        <div class="bubble you">
+                            Ew. That's disgusting. I can't believe you did that.
+                        </div>
+                        <div class="bubble me">
+                            Dude.
+                        </div>
                     </div>
-                    <div class="bubble you">
-                        Fall back, and let this shield blow freedom o'er the land. Like the gusty wind that follows a Fourth of July weenie with extra onion.
+                    <div class="chat" data-chat="person7">
+                        <div class="conversation-start">
+                            <span>Monday, 1:27 PM</span>
+                        </div>
+                        <div class="bubble me">
+                            Put the knives down!
+                        </div>
+                        <div class="bubble you">
+                            I can’t.
+                        </div>
                     </div>
-                    <div class="bubble you">
-                        Yankee doodle dandy!
+                    <div class="chat" data-chat="person8">
+                        <div class="conversation-start">
+                            <span>Monday, 1:27 PM</span>
+                        </div>
+                        <div class="bubble you">
+                            So what are your weaknesses?
+                        </div>
+                        <div class="bubble me">
+                            What do you mean?
+                        </div>
+                        <div class="bubble you">
+                            I'm just making a list. Green Lantern can't affect yellow, Flash is bad with cold. What
+                            about you?
+                        </div>
+                        <div class="bubble me">
+                            Put down nothing.
+                        </div>
+                        <div class="bubble you">
+                            You're saying you don't have any weaknesses?
+                        </div>
+                        <div class="bubble me">
+                            I'm saying if I did I wouldn't be dumb enough to tell people what they are.
+                        </div>
                     </div>
-                    <div class="bubble you">
-                        Let's yankee our doodles outta here!
+                    <div class="write">
+                        <input id="msg-input" placeholder="Type a message" type="text" />
+                        <div class="write-link send"></div>
                     </div>
-                </div>
-                <div class="chat" data-chat="person4">
-                    <div class="conversation-start">
-                        <span>Yesterday, 4:20 PM</span>
-                    </div>
-                    <div class="bubble you">
-                        I had another Liam Neeson nightmare. I kidnapped his daughter and he just wasn't having it.
-                    </div>
-                    <div class="bubble you">
-                        They made three of those movies. At some point you have to wonder if he's just a bad parent.
-                    </div>
-                    <div class="bubble me">
-                        Hmmm.
-                    </div>
-                </div>
-                <div class="chat" data-chat="person5">
-                    <div class="conversation-start">
-                        <span>Today, 6:28 AM</span>
-                    </div>
-                    <div class="bubble you">
-                        Hey. Ow,Ah Ah Ah Ah Ah Ah Ah Ah Ah Ah.
-                    </div>
-                    <div class="bubble me">
-                        It is a tight fit sir.
-                    </div>
-                    <div class="bubble you">
-                        Hey, Ah.
-                    </div>
-                    <div class="bubble me">
-                        Sir the more you struggle the more this is going to hurt
-                    </div>
-                    <div class="bubble you">
-                        Be gentle. This is my first time.
-                    </div>
-                    <div class="bubble you">
-                        I designed this to come off, so... hey. I really should be able to...
-                    </div>
-                    <div class="bubble me">
-                        Please, try not to move sir.
-                    </div>
-                </div>
-                <div class="chat" data-chat="person6">
-                    <div class="conversation-start">
-                        <span>Monday, 1:27 PM</span>
-                    </div>
-                    <div class="bubble me">
-                        You're disgusting!
-                    </div>
-                    <div class="bubble you">
-                        What did I do?
-                    </div>
-                    <div class="bubble me">
-                        Reed just told me your webbing is organic!
-                    </div>
-                    <div class="bubble you">
-                        Yeah so?
-                    </div>
-                    <div class="bubble me">
-                        You've made me hammocks out of that stuff!
-                    </div>
-                    <div class="bubble you">
-                        I still don't see the problem.
-                    </div>
-                    <div class="bubble me">
-                        I slept in hardened white fluid that came out of your body.
-                    </div>
-                    <div class="bubble you">
-                        Ew. That's disgusting. I can't believe you did that.
-                    </div>
-                    <div class="bubble me">
-                        Dude.
-                    </div>
-                </div>
-                <div class="chat" data-chat="person7">
-                    <div class="conversation-start">
-                        <span>Monday, 1:27 PM</span>
-                    </div>
-                    <div class="bubble me">
-                        Put the knives down!
-                    </div>
-                    <div class="bubble you">
-                        I can’t.
-                    </div>
-                </div>
-                <div class="chat" data-chat="person8">
-                    <div class="conversation-start">
-                        <span>Monday, 1:27 PM</span>
-                    </div>
-                    <div class="bubble you">
-                        So what are your weaknesses?
-                    </div>
-                    <div class="bubble me">
-                        What do you mean?
-                    </div>
-                    <div class="bubble you">
-                        I'm just making a list. Green Lantern can't affect yellow, Flash is bad with cold. What about you?
-                    </div>
-                    <div class="bubble me">
-                        Put down nothing.
-                    </div>
-                    <div class="bubble you">
-                        You're saying you don't have any weaknesses?
-                    </div>
-                    <div class="bubble me">
-                        I'm saying if I did I wouldn't be dumb enough to tell people what they are.
-                    </div>
-                </div>
-                <div class="write">
-                    <input id="msg-input" placeholder="Type a message" type="text" />
-                    <div class="write-link send"></div>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-</body>
-
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+        <script src="js/please-chat.js"></script>
+    </body>
 </html>
