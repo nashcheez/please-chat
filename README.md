@@ -85,7 +85,13 @@ To run the application, just open `index.html` in your browser.
 git clone https://github.com/nashcheez/please-chat.git
 ```
 
-2. Open `index.html`
+2. To run the application locally you will need to change the WebSocket connection from `wss` to `ws`. See [why](https://stackoverflow.com/questions/46557485/difference-between-ws-and-wss).
+
+```js
+var websocket = new WebSocket("ws://echo.websocket.org/");
+```
+
+3. Open `index.html`
 
 <!-- ROADMAP -->
 
