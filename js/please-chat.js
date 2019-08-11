@@ -1,6 +1,6 @@
 (function() {
     var pleaseChat = {
-        websocket: new WebSocket("ws://echo.websocket.org/"),
+        websocket: new WebSocket("wss://echo.websocket.org/"),
         that: this,
         init: function() {
             var that = this;
@@ -99,7 +99,7 @@
                         .addClass("online");
                     thisObj.children(".go-status").html("Go Online");
                 } else {
-                    that.websocket = new WebSocket("ws://echo.websocket.org/");
+                    that.websocket = new WebSocket("wss://echo.websocket.org/");
                     that.webSocketHandlers();
                     thisObj
                         .children()
